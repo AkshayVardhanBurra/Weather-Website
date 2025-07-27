@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Website</title>
+    <link id="dayOrNight" rel="stylesheet" href="day.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <form id="searchForm">
+            <input id = "searchLocation" type="search" value="london"/>
+            <button id="searchButton" type="submit">
+                Search
+            </button>
+        </form>
+    </header>
+
+
+    <main>
+        <div class="weatherContent">
+            <img id="weatherImg" src="https://cdn.weatherapi.com/weather/64x64/night/116.png"/>
+            <h1 class="temperature">
+                    51 degrees F
+            </h1>
+            <h3 id="tempDescription">
+                Partly Cloudy
+            </h3>
+            
+            <h2 id="cityCountry">
+                London, United Kingdom
+            </h2>
+
+            <button id="saveButton" class="saveButton">
+                Save
+            </button>
+
+            <button class="conversion">
+                F
+            </button>
+        </div>
+        <div id = "loading" class="invisible">
+                Loading....
+        </div>
+    </main>
+
+    <footer>
+        Saved Locations:
+        <section class="savedLocations" id="savedLocations">
+            <div class="location">
+                London
+                <span class="remove-location" style="cursor:pointer; color:red; margin-left:8px;">&#10005;</span>
+            </div>
+            <div class="location">
+                Arkansas
+                <span class="remove-location" style="cursor:pointer; color:red; margin-left:8px;">&#10005;</span>
+            </div>
+            <div class="location">
+                ..............
+                <span class="remove-location" style="cursor:pointer; color:red; margin-left:8px;">&#10005;</span>
+            </div>
+        </section>
+    </footer>
+    
+    
+</body>
+</html>
