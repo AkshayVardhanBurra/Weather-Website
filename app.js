@@ -127,6 +127,8 @@ document.querySelector(".conversion").addEventListener('click', (event) => {
     toggleButtonText(isF, event.target);
 })
 
+toggleButtonText(isF, document.querySelector(".conversion"));
+
 function toggleButtonText(isF, targetButton){
     if(isF){
         targetButton.textContent = 'C';
