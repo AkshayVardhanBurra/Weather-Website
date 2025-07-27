@@ -1,6 +1,6 @@
 
 const API_KEY = "3af651289611407db0105856252707";
-const BASE_URL = "http://api.weatherapi.com/v1/current.json?";
+const BASE_URL = "https://api.weatherapi.com/v1/current.json?";
 //String of saved locations.
 
 function loadLocations(){
